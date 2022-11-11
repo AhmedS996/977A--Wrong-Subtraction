@@ -1,0 +1,26 @@
+public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int number = input.nextInt();
+		int times = input.nextInt();
+		int b=number;
+		double a=number,c=number;
+		for (int i = 0; i<times; i++){
+		
+				a/=10;
+				b/=10;
+				c=a-b;
+				c*=10;
+				if(c>0){
+					number--;
+				}else{
+					number/=10;
+				}
+				b=number;
+				c=number;
+				a=number;
+			
+		}
+			System.out.println(number);
+	
+		
+    }//with java 
